@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Mountain View</title>
+    <link rel="stylesheet" href="signup-styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background Image with Overlay -->
+        <div class="background">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Header -->
+            <header class="header">
+                <!-- Logo -->
+                <div class="logo">
+                    LOGO <span class="logo-dot">.</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav">
+                    <a href="#" class="nav-link active">
+                        Home
+                        <div class="nav-underline"></div>
+                    </a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">About</a>
+                </nav>
+
+                <!-- Sign In/Up Buttons -->
+                <div class="header-buttons">
+                    <button class="btn-secondary" id="toggleBtn">Sign In</button>
+                    <button class="btn-primary" id="currentBtn">Sign Up</button>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="form-container">
+                    <!-- Toggle Link -->
+                    <div class="toggle-text">
+                        <p id="toggleText">Have an account? <span class="toggle-link" id="toggleLink">Login</span></p>
+                    </div>
+
+                    <!-- Form Title -->
+                    <h1 class="form-title" id="formTitle">Sign Up</h1>
+
+                    <!-- Form -->
+                    <form class="form" id="authForm">
+                        <!-- Sign Up Fields -->
+                        <div class="signup-fields" id="signupFields">
+                            <!-- First & Last Name Row -->
+                            <div class="name-row">
+                                <div class="input-group">
+                                    <div class="input-container">
+                                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        <input type="text" name="firstname" placeholder="Firstname" class="input-field light">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-container">
+                                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        <input type="text" name="lastname" placeholder="Lastname" class="input-field light">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="input-group">
+                                <div class="input-container">
+                                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <input type="email" name="email" placeholder="Email" class="input-field dark">
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="input-group">
+                                <div class="input-container">
+                                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <circle cx="12" cy="16" r="1"></circle>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <input type="password" name="password" placeholder="Password" class="input-field dark">
+                                </div>
+                            </div>
+
+                            <!-- Register Button -->
+                            <button type="submit" class="submit-btn" id="submitBtn">Register</button>
+
+                            <!-- Remember Me & Terms -->
+                            <div class="form-footer">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="rememberMe" class="checkbox">
+                                    <span class="checkbox-text">Remember Me</span>
+                                </label>
+                                <a href="#" class="link">Terms & conditions</a>
+                            </div>
+                        </div>
+
+                        <!-- Login Fields -->
+                        <div class="login-fields hidden" id="loginFields">
+                            <!-- Username or Email -->
+                            <div class="input-group">
+                                <div class="input-container">
+                                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <input type="text" name="username" placeholder="Username or Email" class="input-field light">
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="input-group">
+                                <div class="input-container">
+                                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <circle cx="12" cy="16" r="1"></circle>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <input type="password" name="loginPassword" placeholder="Password" class="input-field dark">
+                                </div>
+                            </div>
+
+                            <!-- Sign In Button -->
+                            <button type="submit" class="submit-btn hidden" id="loginSubmitBtn">Sign In</button>
+
+                            <!-- Remember Me & Forgot Password -->
+                            <div class="form-footer hidden" id="loginFooter">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="loginRememberMe" class="checkbox">
+                                    <span class="checkbox-text">Remember Me</span>
+                                </label>
+                                <a href="#" class="link">Forgot password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup-script.js"></script>
+</body>
+</html>
